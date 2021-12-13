@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		409CF9872766DDDE00B0B79B /* MacSetupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409CF9862766DDDE00B0B79B /* MacSetupApp.swift */; };
-		409CF9892766DDDE00B0B79B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409CF9882766DDDE00B0B79B /* ContentView.swift */; };
+		409CF9892766DDDE00B0B79B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409CF9882766DDDE00B0B79B /* HomeView.swift */; };
 		409CF98B2766DDDF00B0B79B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409CF98A2766DDDF00B0B79B /* Assets.xcassets */; };
 		409CF98E2766DDDF00B0B79B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409CF98D2766DDDF00B0B79B /* Preview Assets.xcassets */; };
 		409CF9992766DDDF00B0B79B /* MacSetupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409CF9982766DDDF00B0B79B /* MacSetupTests.swift */; };
 		409CF9A32766DDDF00B0B79B /* MacSetupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409CF9A22766DDDF00B0B79B /* MacSetupUITests.swift */; };
 		409CF9A52766DDDF00B0B79B /* MacSetupUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409CF9A42766DDDF00B0B79B /* MacSetupUITestsLaunchTests.swift */; };
+		409CF9B92766DF6100B0B79B /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409CF9B82766DF6100B0B79B /* Tool.swift */; };
+		409CF9BC2766E03E00B0B79B /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409CF9BB2766E03E00B0B79B /* ListItem.swift */; };
+		409CF9BF2766E1D200B0B79B /* ToolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409CF9BE2766E1D200B0B79B /* ToolViewModel.swift */; };
+		409CF9C12766E27E00B0B79B /* tool.json in Resources */ = {isa = PBXBuildFile; fileRef = 409CF9C02766E27E00B0B79B /* tool.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		409CF9832766DDDE00B0B79B /* MacSetup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacSetup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409CF9862766DDDE00B0B79B /* MacSetupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacSetupApp.swift; sourceTree = "<group>"; };
-		409CF9882766DDDE00B0B79B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		409CF9882766DDDE00B0B79B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		409CF98A2766DDDF00B0B79B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		409CF98D2766DDDF00B0B79B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		409CF98F2766DDDF00B0B79B /* MacSetup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacSetup.entitlements; sourceTree = "<group>"; };
@@ -45,6 +49,10 @@
 		409CF99E2766DDDF00B0B79B /* MacSetupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacSetupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		409CF9A22766DDDF00B0B79B /* MacSetupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacSetupUITests.swift; sourceTree = "<group>"; };
 		409CF9A42766DDDF00B0B79B /* MacSetupUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacSetupUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		409CF9B82766DF6100B0B79B /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		409CF9BB2766E03E00B0B79B /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		409CF9BE2766E1D200B0B79B /* ToolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolViewModel.swift; sourceTree = "<group>"; };
+		409CF9C02766E27E00B0B79B /* tool.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tool.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +103,11 @@
 		409CF9852766DDDE00B0B79B /* MacSetup */ = {
 			isa = PBXGroup;
 			children = (
-				409CF9862766DDDE00B0B79B /* MacSetupApp.swift */,
-				409CF9882766DDDE00B0B79B /* ContentView.swift */,
-				409CF98A2766DDDF00B0B79B /* Assets.xcassets */,
+				409CF9BA2766E03600B0B79B /* Protocol */,
+				409CF9B62766DE0600B0B79B /* Resource */,
+				409CF9B32766DDF200B0B79B /* Entry */,
+				409CF9B22766DDE900B0B79B /* Script */,
+				409CF9B12766DDE300B0B79B /* Feature */,
 				409CF98F2766DDDF00B0B79B /* MacSetup.entitlements */,
 				409CF98C2766DDDF00B0B79B /* Preview Content */,
 			);
@@ -127,6 +137,80 @@
 				409CF9A42766DDDF00B0B79B /* MacSetupUITestsLaunchTests.swift */,
 			);
 			path = MacSetupUITests;
+			sourceTree = "<group>";
+		};
+		409CF9B12766DDE300B0B79B /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				409CF9B42766DDF900B0B79B /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		409CF9B22766DDE900B0B79B /* Script */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Script;
+			sourceTree = "<group>";
+		};
+		409CF9B32766DDF200B0B79B /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				409CF9862766DDDE00B0B79B /* MacSetupApp.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		409CF9B42766DDF900B0B79B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				409CF9BD2766E13000B0B79B /* Section */,
+				409CF9B72766DF5B00B0B79B /* Model */,
+				409CF9B52766DE0000B0B79B /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		409CF9B52766DE0000B0B79B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				409CF9882766DDDE00B0B79B /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		409CF9B62766DE0600B0B79B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				409CF98A2766DDDF00B0B79B /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		409CF9B72766DF5B00B0B79B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				409CF9B82766DF6100B0B79B /* Tool.swift */,
+				409CF9C02766E27E00B0B79B /* tool.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		409CF9BA2766E03600B0B79B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				409CF9BB2766E03E00B0B79B /* ListItem.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		409CF9BD2766E13000B0B79B /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				409CF9BE2766E1D200B0B79B /* ToolViewModel.swift */,
+			);
+			path = Section;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +319,7 @@
 			files = (
 				409CF98E2766DDDF00B0B79B /* Preview Assets.xcassets in Resources */,
 				409CF98B2766DDDF00B0B79B /* Assets.xcassets in Resources */,
+				409CF9C12766E27E00B0B79B /* tool.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +344,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				409CF9892766DDDE00B0B79B /* ContentView.swift in Sources */,
+				409CF9BC2766E03E00B0B79B /* ListItem.swift in Sources */,
+				409CF9B92766DF6100B0B79B /* Tool.swift in Sources */,
+				409CF9892766DDDE00B0B79B /* HomeView.swift in Sources */,
 				409CF9872766DDDE00B0B79B /* MacSetupApp.swift in Sources */,
+				409CF9BF2766E1D200B0B79B /* ToolViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

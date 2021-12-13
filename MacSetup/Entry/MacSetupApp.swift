@@ -11,7 +11,7 @@ import SwiftUI
 struct MacSetupApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
