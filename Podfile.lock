@@ -1,0 +1,31 @@
+PODS:
+  - Smile (2.1.1)
+  - SwiftShell (5.1.0)
+  - SwiftyBeaver (1.9.5)
+  - WaterfallGrid (1.0.1)
+
+DEPENDENCIES:
+  - Smile (from `./AutoScriptMacApp/Smile`)
+  - SwiftShell
+  - SwiftyBeaver
+  - WaterfallGrid
+
+SPEC REPOS:
+  trunk:
+    - SwiftShell
+    - SwiftyBeaver
+    - WaterfallGrid
+
+EXTERNAL SOURCES:
+  Smile:
+    :path: "./AutoScriptMacApp/Smile"
+
+SPEC CHECKSUMS:
+  Smile: 50023dc068fb11984df713916970b89e6b705d68
+  SwiftShell: 0c2c6f2fcfc210e84a7b06390581923e2aab2ec7
+  SwiftyBeaver: 84069991dd5dca07d7069100985badaca7f0ce82
+  WaterfallGrid: 0554a759d9a8aa136fc1769480ddb01bc6fb94b9
+
+PODFILE CHECKSUM: 0a5a070d7e0b6e47338bb6449cbf1e2a491799f5
+
+COCOAPODS: 1.11.2
