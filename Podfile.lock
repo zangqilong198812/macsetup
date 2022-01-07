@@ -1,17 +1,22 @@
 PODS:
   - Smile (2.1.1)
+  - SQLite.swift (0.13.1):
+    - SQLite.swift/standard (= 0.13.1)
+  - SQLite.swift/standard (0.13.1)
   - SwiftShell (5.1.0)
   - SwiftyBeaver (1.9.5)
   - WaterfallGrid (1.0.1)
 
 DEPENDENCIES:
   - Smile (from `./AutoScriptMacApp/Smile`)
+  - SQLite.swift
   - SwiftShell
   - SwiftyBeaver
   - WaterfallGrid
 
 SPEC REPOS:
   trunk:
+    - SQLite.swift
     - SwiftShell
     - SwiftyBeaver
     - WaterfallGrid
@@ -22,10 +27,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Smile: 50023dc068fb11984df713916970b89e6b705d68
+  SQLite.swift: 30f2cdb09627181d472e55c4bc6b3b161f28de33
   SwiftShell: 0c2c6f2fcfc210e84a7b06390581923e2aab2ec7
   SwiftyBeaver: 84069991dd5dca07d7069100985badaca7f0ce82
   WaterfallGrid: 0554a759d9a8aa136fc1769480ddb01bc6fb94b9
 
-PODFILE CHECKSUM: 0a5a070d7e0b6e47338bb6449cbf1e2a491799f5
+PODFILE CHECKSUM: ad90e672c04020774e17812297995a46ec152c78
 
 COCOAPODS: 1.11.2

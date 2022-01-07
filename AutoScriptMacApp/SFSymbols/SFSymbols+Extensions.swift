@@ -8,8 +8,6 @@
 import Foundation
 import SwiftUI
 
-
-
 // MARK:- Image
 
 public extension Image {

@@ -10,8 +10,21 @@ import SwiftUI
 
 struct EditFlowView: View {
     @State var selectPath: String = ""
+    @State var command: String = ""
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
+            HStack {
+                Text("command")
+                TextField("command", text: $command)
+                    .frame(maxWidth: 100)
+                Button {
+                    
+                } label: {
+                    Image(symbol: .questionmarkCircle)
+                }
+                .buttonStyle(.plain)
+                .help("显示命令的使用方法")
+            }
             HStack {
                 Text("path")
                 TextField("path", text: $selectPath)
